@@ -42,73 +42,15 @@
             </div>
             <div class="bg-light py-3">
                 <div class="container">
-                    <form>
-                        <div class="form-row">
-                            <div class="col-6">
-                                <div class="form-group"><label>Szukana fraza<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label>
-                                    <div class="input-group"><input class="form-control" type="text" value="creatures">
-                                        <div class="input-group-append">
-                                            <div class="dropdown btn-group" role="group"><button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">W całej bazie</button>
-                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-auto"><label>Szukana fraza</label>
+                            <form class="form-inline d-flex align-items-stretch"><input class="form-control width--400 border-0" type="text">
+                                <div class="dropdown"><button class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">W całej bazie</button>
+                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                                </div><a class="btn btn-secondary text-uppercase" role="button" href="search.html">Wyszukaj</a></form>
                         </div>
-                        <div id="advanced__search" class="collapse">
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group"><label>Kontrybutorzy<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-6">
-                                    <div class="form-group"><label>Data publikacji od<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text" placeholder="RRRR, RRRR-MM lub RRRR-MM-DD"></div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group"><label>Data publikacji do<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text" placeholder="RRRR, RRRR-MM lub RRRR-MM-DD"></div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Link do danych badawczych<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group"><label>Język główny publikacji<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group"><label>Swoboda wykorzystania<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group"><label>Dyscypliny naukowe<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group"><label>Wydawca, czasopismo, ISSN<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row justify-content-between">
-                            <div class="col-auto">
-                                <div><button class="btn text-uppercase" type="reset">Wyczyść</button></div>
-                            </div>
-                            <div class="col-auto">
-                                <div></div>
-                                <div class="btn-group" role="group"><button class="btn" type="button" data-toggle="collapse" data-target="#advanced__search"><i class="fas fa-caret-down mr-2"></i><span>Wyszukiwanie zaawansowane</span></button><a class="btn btn-secondary text-uppercase" role="button"
-                                        href="search.html">Wyszukaj</a></div>
-                            </div>
-                        </div>
-                    </form>
+                        <div class="col-auto"><button class="btn" type="button" data-toggle="modal" data-target="#modal__filters"><i class="fas fa-filter mr-2"></i><span>Wyszukiwanie zaawansowane</span></button></div>
+                    </div>
                 </div>
             </div>
             <div class="py-3">
@@ -258,12 +200,133 @@
                         <h4 class="d-flex align-items-center mb-0 px-3 h6"><span>Informacje o autorze</span></h4>
                         <div><button class="btn btn-link bg-white py-1 px-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="la la-times" style="font-size: 22px;"></i></span></button></div><button type="button" class="close"
                             data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body bg-light p-0">
+                        <div>
+                            <div class="container">
+                                <div class="table--meta line--height--normal py-3">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr class="pt-3">
+                                                    <td class="text-black-50">Imię i nazwisko</td>
+                                                    <td class="text-right">Borong Lu</td>
+                                                </tr>
+                                                <tr class="pt-3">
+                                                    <td class="text-black-50">Rola</td>
+                                                    <td class="text-right">Tekst</td>
+                                                </tr>
+                                                <tr class="pt-3">
+                                                    <td class="text-black-50">Tytuł / stopień naukowy</td>
+                                                    <td class="text-right">Tekst</td>
+                                                </tr>
+                                                <tr class="pt-3">
+                                                    <td class="text-black-50">Instytucje</td>
+                                                    <td class="text-right">
+                                                        <ul class="list-unstyled text-right border-primary mb-0">
+                                                            <li>Instytucja 1</li>
+                                                            <li>Instytucja 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr class="pt-3">
+                                                    <td class="text-black-50">ORCID</td>
+                                                    <td class="text-right">Tekst</td>
+                                                </tr>
+                                                <tr class="pt-3">
+                                                    <td colspan="2"><span class="text-black-50 d-block mb-2">Biografia</span>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus commodo urna, quis auctor augue sagittis in. Praesent quam erat, ultrices vel sollicitudin non, accumsan id tellus. Donec
+                                                            lacinia sem quam, a sollicitudin leo aliquam eget. Sed in scelerisque massa, sed scelerisque dui. Mauris interdum massa faucibus, varius neque vel, pulvinar neque. Aliquam vitae rhoncus enim,
+                                                            vitae mattis ipsum. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec lacinia lectus tellus, aliquet mattis felis
+                                                            dapibus non. Aenean lacinia mi mi. Vestibulum ipsum eros, congue ut urna at, lacinia maximus velit. Praesent eget sem pulvinar, pharetra dolor ut, finibus arcu.<br></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__filters">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header text-white bg-dark d-flex justify-content-between align-items-stretch border-0 p-0">
+                        <h4 class="d-flex align-items-center mb-0 px-3 h6"><span>Wyszukiwanie</span></h4>
+                        <div><button class="btn btn-link bg-white py-1 px-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="la la-times" style="font-size: 22px;"></i></span></button></div><button type="button" class="close"
+                            data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                     <div class="modal-body bg-light py-3 px-0">
                         <div>
                             <div class="container">
-                                <h4 class="h5 font-weight-bold">Borong Lu</h4>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac massa eget enim interdum lacinia eget at neque. Vestibulum fermentum rhoncus blandit. Nullam iaculis est vitae sagittis tempus. Proin porta nisl augue,
-                                    non blandit enim fringilla ut. Etiam at risus imperdiet, feugiat leo vel, feugiat neque.</p>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-6">
+                                            <div class="form-group"><label>Szukana fraza<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label>
+                                                <div class="input-group"><input class="form-control" type="text" value="creatures">
+                                                    <div class="input-group-append">
+                                                        <div class="dropdown btn-group" role="group"><button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">W całej bazie</button>
+                                                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="advanced__search-1">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Kontrybutorzy<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-6">
+                                                <div class="form-group"><label>Data publikacji od<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text" placeholder="RRRR, RRRR-MM lub RRRR-MM-DD"></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group"><label>Data publikacji do<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text" placeholder="RRRR, RRRR-MM lub RRRR-MM-DD"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-1">Link do danych badawczych<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Język główny publikacji<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Swoboda wykorzystania<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Dyscypliny naukowe<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label>Wydawca, czasopismo, ISSN<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row justify-content-between">
+                                        <div class="col-auto">
+                                            <div><button class="btn text-uppercase" type="reset">Wyczyść</button></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div></div>
+                                            <div class="btn-group" role="group"><button class="btn" type="button" data-toggle="collapse" data-target="#advanced__search"><i class="fas fa-caret-down mr-2"></i><span>Wyszukiwanie zaawansowane</span></button><a class="btn btn-secondary text-uppercase"
+                                                    role="button" href="search.html">Wyszukaj</a></div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
