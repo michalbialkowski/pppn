@@ -41,21 +41,72 @@
             </div>
             <div class="bg-light py-3">
                 <div class="container">
-                    <div class="row justify-content-between align-items-end">
-                        <div class="col-auto"><label>Szukana fraza</label>
-                            <form class="form-inline d-flex align-items-stretch"><input class="form-control width--400 border-0" type="text" value="creatures">
-                                <div class="dropdown"><button class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">W całej bazie</button>
-                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                                </div><a class="btn btn-secondary text-uppercase" role="button" href="search.html">Wyszukaj</a></form>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group"><label>Szukana fraza<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label>
+                                    <div class="input-group"><input class="form-control" type="text" value="creatures">
+                                        <div class="input-group-append">
+                                            <div class="dropdown btn-group" role="group"><button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">W całej bazie</button>
+                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-auto"><button class="btn d-flex align-items-center" type="button" data-toggle="modal" data-target="#modal__filters"><i class="material-icons mr-2">filter_list</i><span>Wyszukiwanie zaawansowane</span></button></div>
-                    </div>
-                    <div class="d-flex align-items-baseline mt-3"><span class="mr-2 font-weight-bold">Kontrybutorzy</span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
-                        <span
-                            class="mr-2 font-weight-bold ml-2">Słowa kluczowe</span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
-                            <span
-                                class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
-                    </div>
+                        <div id="advanced__search" class="collapse">
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label>Kontrybutorzy<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <div class="form-group"><label>Data publikacji od<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text" placeholder="RRRR, RRRR-MM lub RRRR-MM-DD"></div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group"><label>Data publikacji do<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text" placeholder="RRRR, RRRR-MM lub RRRR-MM-DD"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Link do danych badawczych<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label>Język główny publikacji<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label>Swoboda wykorzystania<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label>Dyscypliny naukowe<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label>Wydawca, czasopismo, ISSN<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <div><button class="btn text-uppercase d-flex justify-content-center p-0" type="reset"><i class="material-icons mr-2">clear</i><span>Wyczyść</span></button></div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="btn-group" role="group"><button class="btn d-flex align-items-center" type="button" data-toggle="collapse" data-target="#advanced__search"><i class="material-icons mr-2">filter_list</i><span>Wyszukiwanie zaawansowane</span></button><a class="btn btn-secondary text-uppercase"
+                                        role="button" href="search.html">Wyszukaj</a></div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="py-3">
@@ -317,19 +368,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-light fixed-bottom py-3">
+            <div class="fixed-bottom py-3">
                 <div class="container">
-                    <div class="d-flex justify-content-between align-items-baseline">
-                        <div class="d-flex align-items-baseline"><span class="mr-2 font-weight-bold">Kontrybutorzy</span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1"><strong>Borong Lu</strong></span><i class="material-icons" style="font-size: 16px;">close</i></span>
-                            <span
-                                class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1"><strong>Xiaozhong Hu</strong></span><i class="material-icons" style="font-size: 16px;">close</i></span><span class="mr-2 font-weight-bold ml-2">Słowa kluczowe</span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span>
-                                <i
-                                    class="material-icons" style="font-size: 16px;">close</i>
-                                    </span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span><i class="material-icons" style="font-size: 16px;">close</i></span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span>
-                                    <i
-                                        class="material-icons" style="font-size: 16px;">close</i>
-                                        </span>
-                        </div><button class="btn btn-secondary d-flex align-items-center" type="button" data-toggle="modal" data-target="#modal__filters"><i class="material-icons mr-3">filter_list</i><span class="text-uppercase">Filtry</span></button></div>
+                    <div class="d-flex justify-content-end align-items-baseline"><button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#modal__filters"><i class="fas fa-filter mr-3"></i><span class="text-uppercase">Filtry</span></button></div>
                 </div>
             </div>
         </main>

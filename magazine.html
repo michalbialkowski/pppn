@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
@@ -40,297 +41,448 @@
                     </ol>
                 </div>
             </div>
-            <div class="mt-3">
-                <div class="container">
-                    <div class="pb-2 border-bottom">
-                        <div class="row align-items-end">
-                            <div class="col">
-                                <p class="text-uppercase font-weight-bold mb-2">Czasopismo</p>
-                                <div class="d-flex justify-content-between">
-                                    <h3 class="publication--title mb-0 mr-3">Dzieje Najnowsze</h3>
-                                    <div class="dropdown"><button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Polski</button>
-                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">English</a></div>
+            <div>
+                <div class="mt-3">
+                    <div class="container">
+                        <div class="pb-2 border-bottom">
+                            <div class="row align-items-end">
+                                <div class="col-9">
+                                    <div class="d-flex align-items-baseline">
+                                        <p class="text-uppercase font-weight-bold mb-0 mr-2">Czasopismo</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="d-flex justify-content-end">
-                                    <div class="btn-group" role="group"><button class="btn" type="button"><i class="fas fa-link mr-2"></i><span>Skopiuj link</span></button><button class="btn" type="button"><i class="fas fa-share-square mr-2"></i><span>Udostępnij</span></button></div>
+                                    <div class="d-flex justify-content-between align-items-baseline">
+                                        <h3 class="mr-3 font-weight-light"><span class="mr-2">Dzieje Współczesne</span><small class="text-uppercase text-dark border rounded-0 border-dark px-2 h5 mb-0">DN</small></h3>
+                                        <div class="dropdown"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">PL</button>
+                                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">English</a></div>
+                                        </div>
+                                    </div>
+                                    <h5 class="font-weight-light mb-0">Nam laoreet eros et urna commodo porttitor</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="mt-3 mb-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-xl-3">
-                                    <ul class="nav nav-pills flex-column">
-                                        <li class="nav-item"><a class="nav-link active" href="#">Informacje ogólne</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="magazine-numbers.html">Wydania</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="magazine-articles.html">Artykuły</a></li>
-                                    </ul>
+                <div class="mt-3 mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="bg-light table--meta p-3 line--height--normal">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-black-50">Seria</td>
+                                                    <td class="text-right">000000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-black-50">ISSN</td>
+                                                    <td class="text-right">000000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-black-50">eISSN</td>
+                                                    <td class="text-right">000000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-black-50">DOI</td>
+                                                    <td class="text-right">000000000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="d-flex flex-column"><span class="text-black-50 mb-1">Swoboda wykorzystania</span><span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></span></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="d-flex flex-column"><span class="text-black-50 mb-1">Język główny czasopisma</span><span>Polski</span></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="d-flex flex-column"><span class="text-black-50 mb-1">Częstotliwość wydawania</span><span>publikacja neregularna</span></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="d-flex flex-column"><span class="text-black-50 mb-1">Dyscypliny naukowe</span>
+                                                            <ul class="list-inline border-primary mb-0">
+                                                                <li class="list-inline-item">Energetyka</li>
+                                                                <li class="list-inline-item">Polska Gospodarka</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                                <div class="col">
-                                    <form class="mb-3">
-                                        <div class="input-group"><input class="form-control" type="text">
-                                            <div class="input-group-append"><button class="btn btn-secondary" type="button">Szukaj w tym czasopiśmie</button></div>
-                                        </div>
-                                    </form>
-                                    <p>Nam laoreet eros et urna commodo porttitor. Nullam eget tincidunt justo. Curabitur auctor mattis congue. Vestibulum lobortis tempor mauris, eu iaculis lectus pretium vel. Suspendisse lacinia vehicula eros ut fringilla.
+                            </div>
+                            <div class="col">
+                                <div class="d-flex mb-2">
+                                    <div class="btn-group" role="group"><button class="btn d-flex align-items-center" type="button"><i class="material-icons mr-2">link</i><span>Skopiuj link</span></button><button class="btn d-flex align-items-center" type="button"><i class="material-icons mr-2">share</i><span>Udostępnij</span></button></div>
+                                </div>
+                                <form class="mb-3">
+                                    <div class="input-group"><input class="form-control" type="text">
+                                        <div class="input-group-append"><button class="btn btn-secondary" type="button">Szukaj w tym czasopiśmie</button></div>
+                                    </div>
+                                </form>
+                                <h3 class="d-flex justify-content-between align-items-baseline font-weight-light mb-3 pb-2 border-bottom mt-4" data-toggle="collapse" data-target="#latynizacja"><span>Latynizacja</span><i class="material-icons">add</i></h3>
+                                <div id="latynizacja" class="collapse">
+                                    <p class="mb-0">Nam laoreet eros et urna commodo porttitor. Nullam eget tincidunt justo. Curabitur auctor mattis congue. Vestibulum lobortis tempor mauris, eu iaculis lectus pretium vel. Suspendisse lacinia vehicula eros ut fringilla.
                                         Phasellus interdum dui vel arcu pulvinar rhoncus. Sed ultrices, mauris ac mattis tincidunt, turpis est dapibus enim, non accumsan nulla massa id mauris. Aliquam erat volutpat. Praesent sed tellus quam. Cras nec
                                         risus vitae est elementum dignissim ut ac diam. Aliquam vulputate magna eu tortor blandit auctor. Maecenas tortor nisl, mollis a tellus id, suscipit interdum tellus. Donec viverra et erat in aliquam. Suspendisse
                                         sit amet felis sit amet felis malesuada auctor sed et sem. Aliquam tincidunt non risus eu lacinia.<br></p>
-                                    <div>
-                                        <ul class="nav nav-tabs flickity--slider">
-                                            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">Informacje podstawowe</a></li>
-                                            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Opis czasopisma</a></li>
-                                            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Indeksacja i wskaźniki</a></li>
-                                            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-4">Kontakt</a></li>
+                                </div>
+                                <h3 class="d-flex justify-content-between align-items-baseline font-weight-light mb-3 pb-2 border-bottom mt-4" data-toggle="collapse" data-target="#alt-title"><span>Tytuł alternatywny</span><i class="material-icons">add</i></h3>
+                                <div id="alt-title" class="collapse">
+                                    <h4 class="font-weight-light">Heading</h4>
+                                </div>
+                                <h3 class="font-weight-light mb-3 pb-2 border-bottom mt-4">Informacje o czasopiśmie</h3>
+                                <div class="d-flex justify-content-between align-items-baseline mb-2">
+                                    <h4 class="mr-3 font-weight-light"><span>Dzieje Współczesne</span></h4>
+                                    <div class="dropdown"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">PL</button>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">English</a></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0">Nam laoreet eros et urna commodo porttitor. Nullam eget tincidunt justo. Curabitur auctor mattis congue. Vestibulum lobortis tempor mauris, eu iaculis lectus pretium vel. Suspendisse lacinia vehicula eros ut fringilla.
+                                        Phasellus interdum dui vel arcu pulvinar rhoncus. Sed ultrices, mauris ac mattis tincidunt, turpis est dapibus enim, non accumsan nulla massa id mauris. Aliquam erat volutpat. Praesent sed tellus quam. Cras nec
+                                        risus vitae est elementum dignissim ut ac diam. Aliquam vulputate magna eu tortor blandit auctor. Maecenas tortor nisl, mollis a tellus id, suscipit interdum tellus. Donec viverra et erat in aliquam. Suspendisse
+                                        sit amet felis sit amet felis malesuada auctor sed et sem. Aliquam tincidunt non risus eu lacinia.<br></p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">Ostatnie wydanie</h5>
+                                    </div>
+                                    <div class="content--box format--3-4">
+                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled text-right mb-0">
+                                            <li class="mb-3 publication--title h6">Annales Universitatis Mariae Curie-Sklodowska Nr 1/2018<br></li>
+                                            <li class="font-weight-bold">Wydawnictwo Uniwersytetu Warszawskiego</li>
                                         </ul>
-                                        <div class="tab-content pt-3">
-                                            <div class="tab-pane" role="tabpanel" id="tab-1">
-                                                <div class="bg-light p-3 line--height--normal table--meta">
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <tr class="pt-3">
-                                                                    <td class="text-black-50">Skrót tytułu</td>
-                                                                    <td class="text-right">DN</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Podtytuł</td>
-                                                                    <td class="text-right">Dzieje Wspólczesne</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Latynizacja</td>
-                                                                    <td class="text-right">Tekst</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Tytuł alternatywny</td>
-                                                                    <td class="text-right">00000000</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="text-black-50">Seria wydawnicza</td>
-                                                                    <td class="text-right">Tekst</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">ISSN</td>
-                                                                    <td class="text-right">0000000</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">e-ISSN</td>
-                                                                    <td class="text-right">0000000</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">DOI</td>
-                                                                    <td class="text-right">000000</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Swoboda wykorzystania</td>
-                                                                    <td class="text-right"><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Dyscypliny naukowe</td>
-                                                                    <td class="text-right">
-                                                                        <ul class="list-inline text-right border-primary mb-0">
-                                                                            <li class="list-inline-item">Energetyka</li>
-                                                                            <li class="list-inline-item">Polska Gospodarka</li>
-                                                                        </ul>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="text-black-50">Język czasopisma</td>
-                                                                    <td class="text-right">PL</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Częstotliwość wydawania</td>
-                                                                    <td class="text-right">Publikacja nieregularna</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane" role="tabpanel" id="tab-2">
-                                                <div role="tablist" id="accordion-1">
-                                                    <div class="card mb-2">
-                                                        <div class="card-header" role="tab">
-                                                            <h5 class="d-flex justify-content-between align-items-baseline mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">Redakcja</a><i class="fas fa-plus"></i></h5>
-                                                        </div>
-                                                        <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
-                                                            <div class="card-body">
-                                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card mb-2">
-                                                        <div class="card-header" role="tab">
-                                                            <h5 class="d-flex justify-content-between align-items-baseline mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2">Rada naukowa</a><i class="fas fa-plus"></i></h5>
-                                                        </div>
-                                                        <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
-                                                            <div class="card-body">
-                                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card mb-2">
-                                                        <div class="card-header" role="tab">
-                                                            <h5 class="d-flex justify-content-between align-items-baseline mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="#accordion-1 .item-3">Dla autorów i recenzentów</a><i class="fas fa-plus"></i></h5>
-                                                        </div>
-                                                        <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
-                                                            <div class="card-body">
-                                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card mb-2">
-                                                        <div class="card-header" role="tab">
-                                                            <h5 class="d-flex justify-content-between align-items-baseline mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-4" href="#accordion-1 .item-4">Etyka wydawnicza</a><i class="fas fa-plus"></i></h5>
-                                                        </div>
-                                                        <div class="collapse item-4" role="tabpanel" data-parent="#accordion-1">
-                                                            <div class="card-body">
-                                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card mb-2">
-                                                        <div class="card-header" role="tab">
-                                                            <h5 class="d-flex justify-content-between align-items-baseline mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-5" href="#accordion-1 .item-5">Polityka Open Access</a><i class="fas fa-plus"></i></h5>
-                                                        </div>
-                                                        <div class="collapse item-5" role="tabpanel" data-parent="#accordion-1">
-                                                            <div class="card-body">
-                                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane" role="tabpanel" id="tab-3">
-                                                <div class="bg-light table--meta p-3 line--height--normal">
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="text-black-50">Bazy indeksujące</td>
-                                                                    <td class="text-right">Tekst</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Punktacja MNiSM</td>
-                                                                    <td class="text-right">000000</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">SNIP</td>
-                                                                    <td class="text-right">000000000</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">SJR</td>
-                                                                    <td class="text-right">5</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Impact factor</td>
-                                                                    <td class="text-right">3</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Pięcioletni IF</td>
-                                                                    <td class="text-right">2</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Wskaźnik nr 1</td>
-                                                                    <td class="text-right"></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane active" role="tabpanel" id="tab-4">
-                                                <div class="bg-light table--meta p-3 line--height--normal">
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="text-black-50 pt-0 border-top-0">Czasopismo w sieci</td>
-                                                                    <td class="text-right pt-0 border-top-0">
-                                                                        <ul class="list-unstyled text-right border-primary mb-0">
-                                                                            <li><i class="fas fa-link mr-2"></i><span>dziejenajnowsze.pl</span></li>
-                                                                            <li><i class="fab fa-facebook-f mr-2"></i><span>facebook.com/dziejenajnowsze</span></li>
-                                                                        </ul>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="text-black-50 pt-0 border-top-0">Nazwa</td>
-                                                                    <td class="text-right pt-0 border-top-0">Wydawnictwo Uniwersytetu Warszawskiego</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Adres</td>
-                                                                    <td class="text-right">Cell 4</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Telefon</td>
-                                                                    <td class="text-right">Cell 4</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">E-mail</td>
-                                                                    <td class="text-right">Cell 4</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50">Odnośniki</td>
-                                                                    <td class="text-right">Cell 4</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-black-50 pb-0">Wydawnictwo w sieci</td>
-                                                                    <td class="pb-0">
-                                                                        <ul class="list-unstyled text-right border-primary mb-0">
-                                                                            <li><i class="fas fa-link mr-2"></i><span>wydawnictwo-uw.pl</span></li>
-                                                                            <li><i class="fab fa-facebook-f mr-2"></i><span>facebook.com/wydawnictwo-uw</span></li>
-                                                                        </ul>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5 class="mb-0">Ostatnie wydanie</h5>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-5">Artykuły</a></li>
+                                <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Wydania</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-6">Redakcja</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-7">Rada naukowa</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-8">Dla autorów i recenzentów</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-9">Etyka wydawnicza</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-10">Polityka Open Access</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-11">Indeksacja i wskaźniki</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-12">Kontakt</a></li>
+                            </ul>
+                            <div class="tab-content mt-3">
+                                <div class="tab-pane" role="tabpanel" id="tab-5">
+                                    <div>
+                                        <h4 class="d-flex align-items-baseline pb-2 border-bottom mb-3"><span class="mr-3 font-weight-light">Online first</span><small class="text-black-50 h6 mb-0">Wyświetl wszystkie</small></h4>
+                                        <ul class="list-unstyled row">
+                                            <li class="mb-4 col-6"><span class="d-block h4 publication--title">PKP Energetyka po prywatyzacji – bezpieczeństwo dostaw energii i przewozów kolejowych</span>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Dominik Smyrgała</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Leszek Jesień</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Łukasz Kister</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Marcin Koniak</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Łukasz Tolak</li>
+                                                </ul>
+                                            </li>
+                                            <li class="mb-4 col-6"><span class="d-block h4 publication--title">Sprawozdanie z konferencji naukowej „Fundamenty Niepodległej.</span>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Anna Łukaszewska</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h4 class="d-flex align-items-baseline pb-2 border-bottom mb-3"><span class="mr-3 font-weight-light">Najbardziej popularne</span><small class="text-black-50 h6 mb-0">Wyświetl wszystkie</small></h4>
+                                        <ul class="list-unstyled row">
+                                            <li class="mb-4 col-6"><span class="d-block h4 publication--title">PKP Energetyka po prywatyzacji – bezpieczeństwo dostaw energii i przewozów kolejowych</span>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Dominik Smyrgała</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Leszek Jesień</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Łukasz Kister</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Marcin Koniak</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Łukasz Tolak</li>
+                                                </ul>
+                                            </li>
+                                            <li class="mb-4 col-6"><span class="d-block h4 publication--title">Sprawozdanie z konferencji naukowej „Fundamenty Niepodległej.</span>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Anna Łukaszewska</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h4 class="d-flex align-items-baseline pb-2 border-bottom mb-3"><span class="mr-3 font-weight-light">Kolekcja danych</span><small class="text-black-50 h6 mb-0">Wyświetl wszystkie</small></h4>
+                                        <ul class="list-unstyled row">
+                                            <li class="mb-4 col-6"><span class="d-block h4 publication--title">PKP Energetyka po prywatyzacji – bezpieczeństwo dostaw energii i przewozów kolejowych</span>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Dominik Smyrgała</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Leszek Jesień</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Łukasz Kister</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Marcin Koniak</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Łukasz Tolak</li>
+                                                </ul>
+                                            </li>
+                                            <li class="mb-4 col-6"><span class="d-block h4 publication--title">Sprawozdanie z konferencji naukowej „Fundamenty Niepodległej.</span>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Anna Łukaszewska</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="content--box format--3-4">
-                                    <div><img src="assets/img/sample-1280-1280.png"></div>
+                                <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                    <div>
+                                        <h4 class="font-weight-light mb-3">Wszystkie wydania</h4>
+                                        <ul class="nav nav-tabs mb-3">
+                                            <li class="nav-item"><a class="nav-link active" href="#">2020</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#">2018 - 2019</a></li>
+                                        </ul>
+                                        <div class="row mb-3">
+                                            <div class="col-6">
+                                                <div class="media">
+                                                    <div class="content--box format--3-4 mr-3 width--60">
+                                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="publication--title">Głos Prawa nr 8</h5>
+                                                        <p>06/2020</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="media">
+                                                    <div class="content--box format--3-4 mr-3 width--60">
+                                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="publication--title">Głos Prawa nr 8</h5>
+                                                        <p>06/2020</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="media">
+                                                    <div class="content--box format--3-4 mr-3 width--60">
+                                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="publication--title">Głos Prawa nr 8</h5>
+                                                        <p>06/2020</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="media">
+                                                    <div class="content--box format--3-4 mr-3 width--60">
+                                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="publication--title">Głos Prawa nr 8</h5>
+                                                        <p>06/2020</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="media">
+                                                    <div class="content--box format--3-4 mr-3 width--60">
+                                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="publication--title">Głos Prawa nr 8</h5>
+                                                        <p>06/2020</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="media">
+                                                    <div class="content--box format--3-4 mr-3 width--60">
+                                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="publication--title">Głos Prawa nr 8</h5>
+                                                        <p>06/2020</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <h4 class="font-weight-light mb-3">Wydania specjalne</h4>
+                                        <div class="row mb-3">
+                                            <div class="col-6">
+                                                <h5 class="publication--title">Głos Prawa nr 8</h5>
+                                                <p>06/2020</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="publication--title">Głos Prawa nr 7</h5>
+                                                <p>05/2020</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="publication--title">Głos Prawa nr 6</h5>
+                                                <p>04/2020</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="publication--title">Głos Prawa nr 5<br></h5>
+                                                <p>03/2020</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="publication--title">Głos Prawa nr 4</h5>
+                                                <p>02/2020</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="publication--title">Głos Prawa nr 3</h5>
+                                                <p>01/2020</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <ul class="list-unstyled text-right mb-0">
-                                        <li class="mb-3 publication--title h6">Annales Universitatis Mariae Curie-Sklodowska Nr 1/2018<br></li>
-                                        <li class="font-weight-bold">Wydawnictwo Uniwersytetu Warszawskiego</li>
-                                    </ul>
+                                <div class="tab-pane" role="tabpanel" id="tab-6">
+                                    <p>Nam laoreet eros et urna commodo porttitor. Nullam eget tincidunt justo. Curabitur auctor mattis congue. Vestibulum lobortis tempor mauris, eu iaculis lectus pretium vel. Suspendisse lacinia vehicula eros ut fringilla.
+                                        Phasellus interdum dui vel arcu pulvinar rhoncus. Sed ultrices, mauris ac mattis tincidunt, turpis est dapibus enim, non accumsan nulla massa id mauris. Aliquam erat volutpat. Praesent sed tellus quam. Cras nec
+                                        risus vitae est elementum dignissim ut ac diam. Aliquam vulputate magna eu tortor blandit auctor. Maecenas tortor nisl, mollis a tellus id, suscipit interdum tellus. Donec viverra et erat in aliquam. Suspendisse
+                                        sit amet felis sit amet felis malesuada auctor sed et sem. Aliquam tincidunt non risus eu lacinia.</p>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-7">
+                                    <p>Nam laoreet eros et urna commodo porttitor. Nullam eget tincidunt justo. Curabitur auctor mattis congue. Vestibulum lobortis tempor mauris, eu iaculis lectus pretium vel. Suspendisse lacinia vehicula eros ut fringilla.
+                                        Phasellus interdum dui vel arcu pulvinar rhoncus. Sed ultrices, mauris ac mattis tincidunt, turpis est dapibus enim, non accumsan nulla massa id mauris. Aliquam erat volutpat. Praesent sed tellus quam. Cras nec
+                                        risus vitae est elementum dignissim ut ac diam. Aliquam vulputate magna eu tortor blandit auctor. Maecenas tortor nisl, mollis a tellus id, suscipit interdum tellus. Donec viverra et erat in aliquam. Suspendisse
+                                        sit amet felis sit amet felis malesuada auctor sed et sem. Aliquam tincidunt non risus eu lacinia.</p>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-8">
+                                    <p>Nam laoreet eros et urna commodo porttitor. Nullam eget tincidunt justo. Curabitur auctor mattis congue. Vestibulum lobortis tempor mauris, eu iaculis lectus pretium vel. Suspendisse lacinia vehicula eros ut fringilla.
+                                        Phasellus interdum dui vel arcu pulvinar rhoncus. Sed ultrices, mauris ac mattis tincidunt, turpis est dapibus enim, non accumsan nulla massa id mauris. Aliquam erat volutpat. Praesent sed tellus quam. Cras nec
+                                        risus vitae est elementum dignissim ut ac diam. Aliquam vulputate magna eu tortor blandit auctor. Maecenas tortor nisl, mollis a tellus id, suscipit interdum tellus. Donec viverra et erat in aliquam. Suspendisse
+                                        sit amet felis sit amet felis malesuada auctor sed et sem. Aliquam tincidunt non risus eu lacinia.</p>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-9">
+                                    <p>Nam laoreet eros et urna commodo porttitor. Nullam eget tincidunt justo. Curabitur auctor mattis congue. Vestibulum lobortis tempor mauris, eu iaculis lectus pretium vel. Suspendisse lacinia vehicula eros ut fringilla.
+                                        Phasellus interdum dui vel arcu pulvinar rhoncus. Sed ultrices, mauris ac mattis tincidunt, turpis est dapibus enim, non accumsan nulla massa id mauris. Aliquam erat volutpat. Praesent sed tellus quam. Cras nec
+                                        risus vitae est elementum dignissim ut ac diam. Aliquam vulputate magna eu tortor blandit auctor. Maecenas tortor nisl, mollis a tellus id, suscipit interdum tellus. Donec viverra et erat in aliquam. Suspendisse
+                                        sit amet felis sit amet felis malesuada auctor sed et sem. Aliquam tincidunt non risus eu lacinia.</p>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-10">
+                                    <p>Nam laoreet eros et urna commodo porttitor. Nullam eget tincidunt justo. Curabitur auctor mattis congue. Vestibulum lobortis tempor mauris, eu iaculis lectus pretium vel. Suspendisse lacinia vehicula eros ut fringilla.
+                                        Phasellus interdum dui vel arcu pulvinar rhoncus. Sed ultrices, mauris ac mattis tincidunt, turpis est dapibus enim, non accumsan nulla massa id mauris. Aliquam erat volutpat. Praesent sed tellus quam. Cras nec
+                                        risus vitae est elementum dignissim ut ac diam. Aliquam vulputate magna eu tortor blandit auctor. Maecenas tortor nisl, mollis a tellus id, suscipit interdum tellus. Donec viverra et erat in aliquam. Suspendisse
+                                        sit amet felis sit amet felis malesuada auctor sed et sem. Aliquam tincidunt non risus eu lacinia.</p>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-11">
+                                    <div class="bg-light table--meta p-3 line--height--normal">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-black-50">Bazy indeksujące</td>
+                                                        <td class="text-right">Tekst</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">Punktacja MNiSM</td>
+                                                        <td class="text-right">000000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">SNIP</td>
+                                                        <td class="text-right">000000000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">SJR</td>
+                                                        <td class="text-right">5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">Impact factor</td>
+                                                        <td class="text-right">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">Pięcioletni IF</td>
+                                                        <td class="text-right">2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">Wskaźnik nr 1</td>
+                                                        <td class="text-right"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-12">
+                                    <div class="bg-light table--meta p-3 line--height--normal">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-black-50 pt-0 border-top-0">Czasopismo w sieci</td>
+                                                        <td class="text-right pt-0 border-top-0">
+                                                            <ul class="list-unstyled text-right border-primary mb-0">
+                                                                <li><i class="fas fa-link mr-2"></i><span>dziejenajnowsze.pl</span></li>
+                                                                <li><i class="fab fa-facebook-f mr-2"></i><span>facebook.com/dziejenajnowsze</span></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-black-50 pt-0 border-top-0">Nazwa</td>
+                                                        <td class="text-right pt-0 border-top-0">Wydawnictwo Uniwersytetu Warszawskiego</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">Adres</td>
+                                                        <td class="text-right">Cell 4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">Telefon</td>
+                                                        <td class="text-right">Cell 4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">E-mail</td>
+                                                        <td class="text-right">Cell 4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50">Odnośniki</td>
+                                                        <td class="text-right">Cell 4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-black-50 pb-0">Wydawnictwo w sieci</td>
+                                                        <td class="pb-0">
+                                                            <ul class="list-unstyled text-right border-primary mb-0">
+                                                                <li><i class="fas fa-link mr-2"></i><span>wydawnictwo-uw.pl</span></li>
+                                                                <li><i class="fab fa-facebook-f mr-2"></i><span>facebook.com/wydawnictwo-uw</span></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +491,7 @@
             </div>
         </main>
         <footer>
-            <div class="bg-light py-3">
+            <div class="bg-light pt-3 pb--60">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-auto"><img class="height--65" src="assets/img/logo-pppn.svg"></div>
@@ -475,14 +627,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-row justify-content-between">
+                                    <div class="form-row justify-content-between align-items-center">
                                         <div class="col-auto">
-                                            <div><button class="btn text-uppercase" type="reset">Wyczyść</button></div>
+                                            <div><button class="btn text-uppercase d-flex justify-content-center p-0" type="reset"><i class="material-icons mr-2">clear</i><span>Wyczyść</span></button></div>
                                         </div>
                                         <div class="col-auto">
                                             <div></div>
-                                            <div class="btn-group" role="group"><button class="btn" type="button" data-toggle="collapse" data-target="#advanced__search"><i class="fas fa-caret-down mr-2"></i><span>Wyszukiwanie zaawansowane</span></button><a class="btn btn-secondary text-uppercase"
-                                                    role="button" href="search.html">Wyszukaj</a></div>
+                                            <div class="btn-group" role="group"><a class="btn btn-secondary text-uppercase" role="button" href="search.html">Wyszukaj</a></div>
                                         </div>
                                     </div>
                                 </form>

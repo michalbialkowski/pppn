@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext">
     <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="../assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="../assets/css/styles.min.css">
 </head>
 
@@ -42,12 +43,18 @@
                 <div class="container">
                     <div class="row justify-content-between align-items-end">
                         <div class="col-auto"><label>Szukana fraza</label>
-                            <form class="form-inline d-flex align-items-stretch"><input class="form-control width--400 border-0" type="text">
+                            <form class="form-inline d-flex align-items-stretch"><input class="form-control width--400 border-0" type="text" value="creatures">
                                 <div class="dropdown"><button class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">W całej bazie</button>
                                     <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
                                 </div><a class="btn btn-secondary text-uppercase" role="button" href="search.html">Wyszukaj</a></form>
                         </div>
-                        <div class="col-auto"><button class="btn" type="button" data-toggle="modal" data-target="#modal__filters"><i class="fas fa-filter mr-2"></i><span>Wyszukiwanie zaawansowane</span></button></div>
+                        <div class="col-auto"><button class="btn d-flex align-items-center" type="button" data-toggle="modal" data-target="#modal__filters"><i class="material-icons mr-2">filter_list</i><span>Wyszukiwanie zaawansowane</span></button></div>
+                    </div>
+                    <div class="d-flex align-items-baseline mt-3"><span class="mr-2 font-weight-bold">Kontrybutorzy</span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
+                        <span
+                            class="mr-2 font-weight-bold ml-2">Słowa kluczowe</span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
+                            <span
+                                class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
                     </div>
                 </div>
             </div>
@@ -235,7 +242,7 @@
             </div>
         </main>
         <footer>
-            <div class="bg-light py-3">
+            <div class="bg-light pt-3 pb--60">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-auto"><img class="height--65" src="../assets/img/logo-pppn.svg"></div>
@@ -371,14 +378,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-row justify-content-between">
+                                    <div class="form-row justify-content-between align-items-center">
                                         <div class="col-auto">
-                                            <div><button class="btn text-uppercase" type="reset">Wyczyść</button></div>
+                                            <div><button class="btn text-uppercase d-flex justify-content-center p-0" type="reset"><i class="material-icons mr-2">clear</i><span>Wyczyść</span></button></div>
                                         </div>
                                         <div class="col-auto">
                                             <div></div>
-                                            <div class="btn-group" role="group"><button class="btn" type="button" data-toggle="collapse" data-target="#advanced__search"><i class="fas fa-caret-down mr-2"></i><span>Wyszukiwanie zaawansowane</span></button><a class="btn btn-secondary text-uppercase"
-                                                    role="button" href="search.html">Wyszukaj</a></div>
+                                            <div class="btn-group" role="group"><a class="btn btn-secondary text-uppercase" role="button" href="search.html">Wyszukaj</a></div>
                                         </div>
                                     </div>
                                 </form>
