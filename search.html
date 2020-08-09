@@ -50,12 +50,6 @@
                         </div>
                         <div class="col-auto"><button class="btn d-flex align-items-center" type="button" data-toggle="modal" data-target="#modal__filters"><i class="material-icons mr-2">filter_list</i><span>Wyszukiwanie zaawansowane</span></button></div>
                     </div>
-                    <div class="d-flex align-items-baseline mt-3"><span class="mr-2 font-weight-bold">Kontrybutorzy</span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
-                        <span
-                            class="mr-2 font-weight-bold ml-2">Słowa kluczowe</span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span><span class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
-                            <span
-                                class="badge badge-info mr-2"><span class="mr-1">Text</span><i class="fas fa-times"></i></span>
-                    </div>
                 </div>
             </div>
             <div class="py-3">
@@ -78,273 +72,350 @@
                                         <p class="text-uppercase font-weight-bold mb-1 mr-3">Artykuł</p><span class="d-inline align-baseline"><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">PDF</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">MOBI</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">XML</button></span></div>
                                     <h4
                                         class="justify-content-start align-items-baseline publication--title align-baseline"><a class="text-dark d-block align-baseline" href="article.html">Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</a></h4>
-                                        <ul
-                                            class="list-inline d-flex mb-3">
-                                            <li class="list-inline-item text-white bg-info px-2" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
-                                            <li class="list-inline-item d-flex align-items-center"><a class="text-dark" href="article.html"><span class="mr-1 font-weight-bold">oraz 5 innych</span></a><i class="material-icons" style="font-size: 16px;">arrow_forward</i></li>
+                                        <div
+                                            class="mb-3">
+                                            <ul class="list-inline d-flex flex-wrap mb-0">
+                                                <li class="list-inline-item text-white bg-info px-2" data-toggle="modal" data-target="#modal__author">John Doe</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                                <li class="list-inline-item d-flex align-items-center" data-toggle="collapse" data-target="#collapse__authors__1"><span class="mr-1 font-weight-bold">oraz 14 innych</span><i class="material-icons" style="font-size: 16px;">arrow_forward</i></li>
                                             </ul>
-                                            <h4 class="h6 font-weight-bold">Abstrakt</h4>
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-                                                sequi nesciunt. Neque porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
-                                            <h4 class="h6 font-weight-bold">Pełny tekst</h4>
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-                                                sequi nesciunt. Neque porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
+                                            <div id="collapse__authors__1" class="collapse">
+                                                <ul class="list-inline d-flex flex-wrap mb-0">
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                                    <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                                </ul>
+                                            </div>
                                 </div>
-                                <div class="col-3">
-                                    <div class="d-flex justify-content-end">
-                                        <div class="content--box format--3-4 mb-3 width--120">
-                                            <div><img src="assets/img/sample-1280-1280.png"></div>
-                                        </div>
+                                <h4 class="h6 font-weight-bold">Abstrakt</h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                    porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
+                                <h4 class="h6 font-weight-bold">Pełny tekst</h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                    porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-flex justify-content-end">
+                                    <div class="content--box format--3-4 mb-3 width--120">
+                                        <div><img src="assets/img/sample-1280-1280.png"></div>
                                     </div>
-                                    <ul class="list-unstyled text-right">
-                                        <li class="mb-3 publication--title h6">Annales Universitatis Mariae Curie-Sklodowska Nr 1/2018<br></li>
-                                        <li class="font-weight-bold">Wydawnictwo Uniwersytetu Warszawskiego</li>
-                                        <li class="font-weight-bold">Wydawnictwo WAM</li>
-                                    </ul>
-                                    <ul class="list-unstyled text-right text-primary border-primary">
-                                        <li>Energetyka</li>
-                                        <li>Polska Gospodarka</li>
-                                    </ul>
                                 </div>
+                                <ul class="list-unstyled text-right">
+                                    <li class="mb-3 publication--title h6">Annales Universitatis Mariae Curie-Sklodowska Nr 1/2018<br></li>
+                                    <li class="font-weight-bold">Wydawnictwo Uniwersytetu Warszawskiego</li>
+                                    <li class="font-weight-bold">Wydawnictwo WAM</li>
+                                </ul>
+                                <ul class="list-unstyled text-right text-primary border-primary">
+                                    <li>Energetyka</li>
+                                    <li>Polska Gospodarka</li>
+                                </ul>
+                                <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <div class="card border-0 mt-4">
-                        <div class="card-body p-0">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="d-flex justify-content-start align-items-baseline">
-                                        <p class="text-uppercase font-weight-bold mb-1 mr-3">Książka autorska</p><span class="d-inline align-baseline"><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">PDF</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">MOBI</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">EPUB</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">XML</button></span></div>
-                                    <h4
-                                        class="justify-content-start align-items-baseline publication--title align-baseline"><a class="text-dark d-block align-baseline" href="book-author.html">Diabeł w sutannie, czyli ontologia pewnych bytów według Indian Matsige</a></h4>
-                                        <ul class="list-inline mb-3">
+                </div>
+                <hr>
+                <div class="card border-0 mt-4">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex justify-content-start align-items-baseline">
+                                    <p class="text-uppercase font-weight-bold mb-1 mr-3">Książka autorska</p><span class="d-inline align-baseline"><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">PDF</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">MOBI</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">EPUB</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">XML</button></span></div>
+                                <h4
+                                    class="justify-content-start align-items-baseline publication--title align-baseline"><a class="text-dark d-block align-baseline" href="book-author.html">Diabeł w sutannie, czyli ontologia pewnych bytów według Indian Matsige</a></h4>
+                                    <div class="mb-3">
+                                        <ul class="list-inline d-flex flex-wrap mb-0">
+                                            <li class="list-inline-item text-white bg-info px-2" data-toggle="modal" data-target="#modal__author">John Doe</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                            <li class="list-inline-item d-flex align-items-center" data-toggle="collapse" data-target="#collapse__authors__2"><span class="mr-1 font-weight-bold">oraz 14 innych</span><i class="material-icons" style="font-size: 16px;">arrow_forward</i></li>
                                         </ul>
-                                        <h4 class="h6 font-weight-bold">Abstrakt</h4>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                                            nesciunt. Neque porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
-                                        <h4 class="h6 font-weight-bold">Pełny tekst</h4>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                                            nesciunt. Neque porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
-                                </div>
-                                <div class="col-3">
-                                    <div class="d-flex justify-content-end">
-                                        <div class="content--box format--3-4 mb-3 width--120">
-                                            <div><img src="assets/img/sample-1280-1280.png"></div>
+                                        <div id="collapse__authors__2" class="collapse">
+                                            <ul class="list-inline d-flex flex-wrap mb-0">
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <ul class="list-unstyled text-right font-weight-bold">
-                                        <li class="mb-2">Warszawa (1999)<br></li>
-                                        <li>Wydawnictwo Uniwersytetu Warszawskiego</li>
-                                    </ul>
-                                    <ul class="list-unstyled text-right text-primary border-primary">
-                                        <li>Energetyka</li>
-                                        <li>Polska Gospodarka</li>
-                                    </ul>
+                                    <h4 class="h6 font-weight-bold">Abstrakt</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                                        et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
+                                    <h4 class="h6 font-weight-bold">Pełny tekst</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                                        et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-flex justify-content-end">
+                                    <div class="content--box format--3-4 mb-3 width--120">
+                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                    </div>
                                 </div>
+                                <ul class="list-unstyled text-right font-weight-bold">
+                                    <li class="mb-2">Warszawa (1999)<br></li>
+                                    <li>Wydawnictwo Uniwersytetu Warszawskiego</li>
+                                </ul>
+                                <ul class="list-unstyled text-right text-primary border-primary">
+                                    <li>Energetyka</li>
+                                    <li>Polska Gospodarka</li>
+                                </ul>
+                                <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <div class="card border-0 mt-4">
-                        <div class="card-body p-0">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="d-flex justify-content-start align-items-baseline">
-                                        <p class="text-uppercase font-weight-bold mb-1 mr-3">Praca zbiorowa</p>
-                                    </div>
-                                    <h4 class="justify-content-start align-items-baseline publication--title"><a class="text-dark d-block" href="book-collective.html">Diabeł w sutannie, czyli ontologia pewnych bytów według Indian Matsige</a></h4>
-                                    <ul class="list-inline mb-3">
+                </div>
+                <hr>
+                <div class="card border-0 mt-4">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex justify-content-start align-items-baseline">
+                                    <p class="text-uppercase font-weight-bold mb-1 mr-3">Praca zbiorowa</p>
+                                </div>
+                                <h4 class="justify-content-start align-items-baseline publication--title"><a class="text-dark d-block" href="book-collective.html">Diabeł w sutannie, czyli ontologia pewnych bytów według Indian Matsige</a></h4>
+                                <div class="mb-3">
+                                    <ul class="list-inline d-flex flex-wrap mb-0">
                                         <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
                                         <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
                                         <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
                                         <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
                                         <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                        <li class="list-inline-item d-flex align-items-center" data-toggle="collapse" data-target="#collapse__authors__3"><span class="mr-1 font-weight-bold">oraz 15 innych</span><i class="material-icons" style="font-size: 16px;">arrow_forward</i></li>
                                     </ul>
-                                    <h4 class="h6 font-weight-bold">Abstrakt</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                                        et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                                        porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
-                                    <h4 class="h6 font-weight-bold">Rozdziały</h4>
-                                    <ul class="list-group mb-3">
-                                        <li class="list-group-item">
-                                            <div class="d-flex align-items-baseline">
-                                                <p class="text-uppercase font-weight-bold mb-0 mr-2">Rozdział 1</p>
-                                                <p class="text-black-50 mb-0">Strony 11 - 27</p>
-                                            </div>
-                                            <h4 class="publication--title h5"><a class="text-dark" href="#">Wstęp o bezpieczeństwie dostaw energii i przewozów kolejowych</a></h4>
-                                            <p class="card-text mb-2">Nullam id dolor id nibh ultricies vehicula ut id <span class="text-white bg-info px-2">creatures</span>&nbsp;elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                                                at eget metus.</p>
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="btn-group btn-group-sm" role="group"><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button>
-                                                            <button
-                                                                class="btn btn-secondary" type="button">MOBI</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="d-flex align-items-baseline">
-                                                <p class="text-uppercase font-weight-bold mb-0 mr-2">Rozdział 4</p>
-                                                <p class="text-black-50 mb-0">Strony 11 - 27</p>
-                                            </div>
-                                            <h4 class="publication--title h5"><a class="text-dark" href="#">Accusantium doloremque&nbsp;laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim&nbsp;<span class="text-white bg-info px-2">creatures</span> ipsam voluptatem quia voluptas sit aspernatur aut odit</a></h4>
-                                            <p
-                                                class="card-text mb-2">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                <div class="row justify-content-between align-items-center">
-                                                    <div class="col-auto">
-                                                        <div class="d-flex justify-content-center">
-                                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button>
-                                                                <button
-                                                                    class="btn btn-secondary" type="button">MOBI</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
-                                                    </div>
-                                                </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="d-flex align-items-baseline">
-                                                <p class="text-uppercase font-weight-bold mb-0 mr-2">Rozdział 13</p>
-                                                <p class="text-black-50 mb-0">Strony 11 - 27</p>
-                                            </div>
-                                            <h4 class="publication--title h5"><a class="text-dark" href="#">Wstęp o bezpieczeństwie dostaw energii i przewozów kolejowych</a></h4>
-                                            <p class="card-text mb-2">Nullam id dolor id nibh&nbsp;<span class="text-white bg-info px-2">creatures</span> ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                                                at eget metus.</p>
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="btn-group btn-group-sm" role="group"><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button>
-                                                            <button
-                                                                class="btn btn-secondary" type="button">MOBI</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-3">
-                                    <div class="d-flex justify-content-end">
-                                        <div class="content--box format--3-4 mb-3 width--120">
-                                            <div><img src="assets/img/sample-1280-1280.png"></div>
-                                        </div>
-                                    </div>
-                                    <ul class="list-unstyled text-right">
-                                        <li class="mb-3 publication--title h6">Annales Universitatis Mariae Curie-Sklodowska Nr 1/2018<br></li>
-                                        <li class="mb-2">Warszawa (1999)<br></li>
-                                        <li class="font-weight-bold">Wydawnictwo Uniwersytetu Warszawskiego</li>
-                                    </ul>
-                                    <ul class="list-unstyled text-right text-primary border-primary">
-                                        <li>Energetyka</li>
-                                        <li>Polska Gospodarka</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="card border-0 mt-4">
-                        <div class="card-body p-0">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="d-flex justify-content-start align-items-baseline">
-                                        <p class="text-uppercase font-weight-bold mb-1 mr-3">Rozdział</p><span class="d-inline align-baseline"><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">PDF</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">MOBI</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">EPUB</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">XML</button></span></div>
-                                    <h4
-                                        class="justify-content-start align-items-baseline publication--title align-baseline"><a class="text-dark d-block align-baseline" href="section.html">Diabeł w sutannie, czyli ontologia pewnych bytów według Indian Matsige</a></h4>
-                                        <ul class="list-inline mb-3">
+                                    <div id="collapse__authors__3" class="collapse">
+                                        <ul class="list-inline d-flex flex-wrap mb-0">
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
                                             <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
                                         </ul>
-                                        <h4 class="h6 font-weight-bold">Pełny tekst</h4>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                                            nesciunt. Neque porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
-                                </div>
-                                <div class="col-3">
-                                    <div class="d-flex justify-content-end">
-                                        <div class="content--box format--3-4 mb-3 width--120">
-                                            <div><img src="assets/img/sample-1280-1280.png"></div>
-                                        </div>
                                     </div>
-                                    <ul class="list-unstyled text-right font-weight-bold">
-                                        <li class="mb-2">Warszawa (1999)<br></li>
-                                        <li>Wydawnictwo Uniwersytetu Warszawskiego</li>
-                                    </ul>
-                                    <ul class="list-unstyled text-right text-primary border-primary">
-                                        <li>Energetyka</li>
-                                        <li>Polska Gospodarka</li>
-                                    </ul>
                                 </div>
+                                <h4 class="h6 font-weight-bold">Abstrakt</h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                    porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
+                                <h4 class="h6 font-weight-bold">Rozdziały</h4>
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-baseline">
+                                            <p class="text-uppercase font-weight-bold mb-0 mr-2">Rozdział 1</p>
+                                            <p class="text-black-50 mb-0">Strony 11 - 27</p>
+                                        </div>
+                                        <h4 class="publication--title h5"><a class="text-dark" href="#">Wstęp o bezpieczeństwie dostaw energii i przewozów kolejowych</a></h4>
+                                        <p class="card-text mb-2">Nullam id dolor id nibh ultricies vehicula ut id <span class="text-white bg-info px-2">creatures</span>&nbsp;elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                                            at eget metus.</p>
+                                        <div class="row justify-content-between align-items-center">
+                                            <div class="col-auto">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="btn-group btn-group-sm" role="group"><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button>
+                                                        <button
+                                                            class="btn btn-secondary" type="button">MOBI</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-baseline">
+                                            <p class="text-uppercase font-weight-bold mb-0 mr-2">Rozdział 4</p>
+                                            <p class="text-black-50 mb-0">Strony 11 - 27</p>
+                                        </div>
+                                        <h4 class="publication--title h5"><a class="text-dark" href="#">Accusantium doloremque&nbsp;laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim&nbsp;<span class="text-white bg-info px-2">creatures</span> ipsam voluptatem quia voluptas sit aspernatur aut odit</a></h4>
+                                        <p
+                                            class="card-text mb-2">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            <div class="row justify-content-between align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="btn-group btn-group-sm" role="group"><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button>
+                                                            <button
+                                                                class="btn btn-secondary" type="button">MOBI</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-baseline">
+                                            <p class="text-uppercase font-weight-bold mb-0 mr-2">Rozdział 13</p>
+                                            <p class="text-black-50 mb-0">Strony 11 - 27</p>
+                                        </div>
+                                        <h4 class="publication--title h5"><a class="text-dark" href="#">Wstęp o bezpieczeństwie dostaw energii i przewozów kolejowych</a></h4>
+                                        <p class="card-text mb-2">Nullam id dolor id nibh&nbsp;<span class="text-white bg-info px-2">creatures</span> ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                                            at eget metus.</p>
+                                        <div class="row justify-content-between align-items-center">
+                                            <div class="col-auto">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="btn-group btn-group-sm" role="group"><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button><button class="btn btn-secondary mr-2" type="button">PDF</button>
+                                                        <button
+                                                            class="btn btn-secondary" type="button">MOBI</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-flex justify-content-end">
+                                    <div class="content--box format--3-4 mb-3 width--120">
+                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled text-right">
+                                    <li class="mb-3 publication--title h6">Annales Universitatis Mariae Curie-Sklodowska Nr 1/2018<br></li>
+                                    <li class="mb-2">Warszawa (1999)<br></li>
+                                    <li class="font-weight-bold">Wydawnictwo Uniwersytetu Warszawskiego</li>
+                                </ul>
+                                <ul class="list-unstyled text-right text-primary border-primary">
+                                    <li>Energetyka</li>
+                                    <li>Polska Gospodarka</li>
+                                </ul>
+                                <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-4">
-                        <nav class="d-flex justify-content-center">
-                            <ul class="pagination pagination-lg mb-0">
-                                <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
                 </div>
-            </div>
-            <div class="bg-light fixed-bottom py-3">
-                <div class="container">
-                    <div class="d-flex justify-content-between align-items-baseline">
-                        <div class="d-flex align-items-baseline"><span class="mr-2 font-weight-bold">Kontrybutorzy</span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1"><strong>Borong Lu</strong></span><i class="material-icons" style="font-size: 16px;">close</i></span>
-                            <span
-                                class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1"><strong>Xiaozhong Hu</strong></span><i class="material-icons" style="font-size: 16px;">close</i></span><span class="mr-2 font-weight-bold ml-2">Słowa kluczowe</span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span>
-                                <i
-                                    class="material-icons" style="font-size: 16px;">close</i>
-                                    </span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span><i class="material-icons" style="font-size: 16px;">close</i></span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span>
-                                    <i
-                                        class="material-icons" style="font-size: 16px;">close</i>
-                                        </span>
-                        </div><button class="btn btn-secondary d-flex align-items-center" type="button" data-toggle="modal" data-target="#modal__filters"><i class="material-icons mr-3">filter_list</i><span class="text-uppercase">Filtry</span></button></div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="bg-light pt-3 pb--60">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-auto"><img class="height--65" src="assets/img/logo-pppn.svg"></div>
-                        <div class="col-auto">
-                            <div class="btn-group" role="group"><button class="btn" type="button">Zgłoś błąd</button><button class="btn" type="button">Newsletter</button><button class="btn" type="button">O projekcie</button><button class="btn" type="button">Kontakt</button></div>
+                <hr>
+                <div class="card border-0 mt-4">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex justify-content-start align-items-baseline">
+                                    <p class="text-uppercase font-weight-bold mb-1 mr-3">Rozdział</p><span class="d-inline align-baseline"><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">PDF</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">MOBI</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">EPUB</button><button class="btn btn-secondary btn-sm mr-2 py-0" type="button">XML</button></span></div>
+                                <h4
+                                    class="justify-content-start align-items-baseline publication--title align-baseline"><a class="text-dark d-block align-baseline" href="section.html">Diabeł w sutannie, czyli ontologia pewnych bytów według Indian Matsige</a></h4>
+                                    <div class="mb-3">
+                                        <ul class="list-inline d-flex flex-wrap mb-0">
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                            <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                            <li class="list-inline-item d-flex align-items-center" data-toggle="collapse" data-target="#collapse__authors__4"><span class="mr-1 font-weight-bold">oraz 15 innych</span><i class="material-icons" style="font-size: 16px;">arrow_forward</i></li>
+                                        </ul>
+                                        <div id="collapse__authors__4" class="collapse">
+                                            <ul class="list-inline d-flex flex-wrap mb-0">
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Borong Lu</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Daode JI</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Yalan Sheng</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Weibo Song</li>
+                                                <li class="list-inline-item" data-toggle="modal" data-target="#modal__author">Xiaozhong Hu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h4 class="h6 font-weight-bold">Pełny tekst</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <span class="text-white bg-info px-2">creatures</span>&nbsp;accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                                        et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro quisquam est, qui dolorem <span class="text-white bg-info px-2">creatures</span>&nbsp;nim ad minima veniam....<br></p>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-flex justify-content-end">
+                                    <div class="content--box format--3-4 mb-3 width--120">
+                                        <div><img src="assets/img/sample-1280-1280.png"></div>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled text-right font-weight-bold">
+                                    <li class="mb-2">Warszawa (1999)<br></li>
+                                    <li>Wydawnictwo Uniwersytetu Warszawskiego</li>
+                                </ul>
+                                <ul class="list-unstyled text-right text-primary border-primary">
+                                    <li>Energetyka</li>
+                                    <li>Polska Gospodarka</li>
+                                </ul>
+                                <div class="d-flex align-items-center"><span class="text-nowrap mr-2">Swoboda wykorzystania</span><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/CC-BY-SA_icon.svg" title="Opis sposobu licencjonowania"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="mt-4">
+                    <nav class="d-flex justify-content-center">
+                        <ul class="pagination mb-0">
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </footer>
+    </div>
+    <div class="bg-light fixed-bottom py-3">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-baseline">
+                <div class="d-flex align-items-baseline"><span class="mr-2 font-weight-bold">Kontrybutorzy</span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1"><strong>Borong Lu</strong></span><i class="material-icons" style="font-size: 16px;">close</i></span>
+                    <span
+                        class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1"><strong>Xiaozhong Hu</strong></span><i class="material-icons" style="font-size: 16px;">close</i></span><span class="mr-2 font-weight-bold ml-2">Słowa kluczowe</span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span>
+                        <i
+                            class="material-icons" style="font-size: 16px;">close</i>
+                            </span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span><i class="material-icons" style="font-size: 16px;">close</i></span><span class="badge badge-info d-flex align-items-center mr-2"><span class="mr-1">Text</span>
+                            <i
+                                class="material-icons" style="font-size: 16px;">close</i>
+                                </span>
+                </div><button class="btn btn-secondary d-flex align-items-center" type="button" data-toggle="modal" data-target="#modal__filters"><i class="material-icons mr-3">filter_list</i><span class="text-uppercase">Filtry</span></button></div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="bg-light pt-3 pb--60">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto"><img class="height--65" src="assets/img/logo-pppn.svg"></div>
+                    <div class="col-auto">
+                        <div class="btn-group" role="group"><button class="btn" type="button">Zgłoś błąd</button><button class="btn" type="button">Newsletter</button><button class="btn" type="button">O projekcie</button><button class="btn" type="button">Kontakt</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
     <div>
         <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__author">
@@ -364,6 +435,10 @@
                                                 <tr class="pt-3">
                                                     <td class="text-black-50">Imię i nazwisko</td>
                                                     <td class="text-right">Borong Lu</td>
+                                                </tr>
+                                                <tr class="pt-3">
+                                                    <td class="text-black-50">E-mail</td>
+                                                    <td class="text-right">borong.lu@example.com</td>
                                                 </tr>
                                                 <tr class="pt-3">
                                                     <td class="text-black-50">Rola</td>
@@ -431,7 +506,16 @@
                                     <div id="advanced__search-1">
                                         <div class="form-row">
                                             <div class="col">
-                                                <div class="form-group"><label>Kontrybutorzy<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                                <div class="form-group"><label>Kontrybutorzy<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label>
+                                                    <div class="d-flex form-control"><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Borong Lu</span><i class="material-icons">close</i></span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Daode JI</span>
+                                                        <i
+                                                            class="material-icons">close</i>
+                                                            </span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Yalan Sheng</span><i class="material-icons">close</i></span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Weibo Song</span>
+                                                            <i
+                                                                class="material-icons">close</i>
+                                                                </span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Xiaozhong Hu</span><i class="material-icons">close</i></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
@@ -451,22 +535,45 @@
                                         </div>
                                         <div class="form-row">
                                             <div class="col">
-                                                <div class="form-group"><label>Język główny publikacji<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                                <div class="form-group"><label>Język główny publikacji<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label>
+                                                    <div class="d-flex form-control"><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Polski</span><i class="material-icons">close</i></span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Angielski</span>
+                                                        <i
+                                                            class="material-icons">close</i>
+                                                            </span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col">
-                                                <div class="form-group"><label>Swoboda wykorzystania<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                                <div class="form-group"><label>Swoboda wykorzystania<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label>
+                                                    <div class="d-flex form-control"><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">CC BY-SA</span><i class="material-icons">close</i></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col">
-                                                <div class="form-group"><label>Dyscypliny naukowe<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                                <div class="form-group"><label>Dyscypliny naukowe<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label>
+                                                    <div class="d-flex form-control"><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Energetyka</span><i class="material-icons">close</i></span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Polska gospodarka</span>
+                                                        <i
+                                                            class="material-icons">close</i>
+                                                            </span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col">
-                                                <div class="form-group"><label>Wydawca, czasopismo, ISSN<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label><input class="form-control" type="text"></div>
+                                                <div class="form-group"><label>Wydawca, czasopismo, ISSN<i class="fas fa-info-circle ml-2 text-black-50" data-toggle="tooltip" data-bs-tooltip="" title="Opis pola formularza"></i></label>
+                                                    <div class="d-flex form-control"><span class="mr-2 font-weight-bold">Wydawca:</span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Wydawnictwo Uniwersytetu Warszawskiego</span>
+                                                        <i
+                                                            class="material-icons">close</i>
+                                                            </span><span class="mr-2 font-weight-bold">Czasopismo:</span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2">Dzieje Najnowsze</span><i class="material-icons">close</i></span>
+                                                            <span
+                                                                class="mr-2 font-weight-bold">ISSN:</span><span class="badge badge-primary d-flex align-items-center p-2 rounded-pill mr-2"><span class="mr-2"><strong>1748-7188</strong></span><i class="material-icons">close</i></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
